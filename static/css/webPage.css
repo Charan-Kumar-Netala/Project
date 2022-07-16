@@ -1,0 +1,33 @@
+body {background-color: rgb(145, 145, 243);}
+.border {margin-top: 50px;margin-left: 50px;margin-right: 50px; width: 90%; height: 600px; 
+        border: 2px solid blue; background-color: white;}
+.nav {background-color: none;text-align: center; padding: 5px; width: 90%;margin-left: 50px;}
+.nav li {display: inline-flex; padding: 10px; font-size: large;}
+.nav li a {color: rgba(34, 32, 32, 0.521);text-decoration: none; opacity: 0.9=8;}
+.nav li a:hover {opacity: 1; color: black;}
+.nav .round { text-align: center;
+            background-color: rgb(231, 158, 23); border-radius:20px; text-align: center;
+            padding: 5px 20px; opacity: 0.9;}
+.nav .round:hover {opacity: 1; background-color: rgb(252, 172, 24);}
+.right {float: right;}
+.nav .home {float: left;}
+.head {font-size: 60px;padding-left:40px; margin-left: 50px;}
+.goto {text-align: left; margin-left: 50px;}
+.go {background-color: brown; padding: 10px 20px; text-align: center;;margin-left: 50px;opacity: 0.9;}
+.go:hover {opacity: 1; background-color: rgb(170, 23, 23); }
+.gt {background-color:burlywood;padding: 10px 30px;margin-left: 90px;opacity: 0.9;}
+.gt:hover {opacity: 1;background-color: rgb(223, 171, 103);}
+.goto a {color: white; text-decoration: none;}
+
+.footer {background-color: white;margin-left: 50px;margin-right: 50px; width: 90%; height: 150px;
+        border: 2px solid blue; text-align: center;}
+.foot {margin-left: 70px; font-size: 25px; }
+.content {margin-left: 25px;
+         color: white; display: inline-flex; }
+.content a {font-style: italic;text-decoration: none; color:rgba(0, 0, 0, 0.815) ; opacity: 0.9; font-weight: bold;}
+.content a:hover {opacity: 1;color: rgb(0, 0, 0);}
+.content .email {background-color: rgb(241, 156, 45); width: fit-content; padding: 10px 15px;
+                border-radius: 20px;}
+.content .email strong {text-decoration: underline;}
+.form {float: right; margin-right: 60px;
+        margin-top: 40px;}

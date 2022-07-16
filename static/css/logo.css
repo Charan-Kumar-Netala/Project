@@ -1,0 +1,126 @@
+
+.logo {
+    position: relative;
+    border-top: 50px solid #ea4335;
+    border-right: 50px solid #4285f4;
+    border-left: 50px solid #fbbc05;
+    border-bottom: 50px solid #34a853;
+    border-radius: 50%; position: relative;
+    height: 150px;width: 150px;}
+
+.logo::before {
+    content: "";
+    top: 50%;
+    left: 80px;
+    position: absolute;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 50px;
+    background: #4285f4;
+}
+
+.logo::after {
+    content: "";
+    position: absolute;
+    border-top: 100px solid transparent;
+    border-right: 100px solid #fff;
+    top: -50px;
+    left: 100px;
+    width: 0;
+    height: 0;
+
+}
+body {
+    background: #fff;
+}
+
+.instalogo {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background: radial-gradient(circle at 33% 100%,
+    #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    border-radius: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instalogo_border {
+    height: 200px;
+    width: 200px;
+    background: transparent;
+    border: 20px solid #fff;
+    border-radius: 20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instalogo_border::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: transparent;
+    border-radius: 50%;
+    border: 20px solid #fff;
+}
+
+.instalogo_border::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    background: transparent;
+    border: 12px solid #fff;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+}
+
+.facebooklogo {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #4285f4;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebooklogo_border {
+    background: #fff;
+    width: 5px;
+    height: 170px;
+    top: 45px;left: 35px;
+    position: relative;
+    border:20px solid #fff;
+}
+
+.facebooklogo_border::before {
+    content: "";
+    background: #fff;
+    position: absolute;
+    top: 20px; right: -60px;
+    width: 80px;
+    height: 5px;
+    border: 20px solid #fff;
+}
+
+.facebooklogo_border::after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    background: #fff;
+    top: -60px;
+    left: -20px;
+    border: 20px solid #fff;
+    border-top-left-radius: 40% ;
+    border-bottom-right-radius: 50%;
+}

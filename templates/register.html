@@ -1,0 +1,16 @@
+{% extends "webPage.html" %}
+{% block content %}
+<form action="/register" method="POST">
+    <h2>Registration Form</h2>
+    <p><b>Name </b></p>
+    <p><input type="text" name="name" placeholder="Enter name"></p>
+    <p><b>Username </b></p>
+    <p><input type="text" name="username" placeholder="Enter username"></p>
+    <p><b>Password </b></p>
+    <p><input type="password" name="password" placeholder="Enter password"></p>
+    <p><input class="button1" type="submit" value="Register"></p>            
+</form>
+<div class="regfooter">
+    <p>An existing user?  <a href="/login" ><b>Login!</b></a></p>
+</div>
+{% endblock %}

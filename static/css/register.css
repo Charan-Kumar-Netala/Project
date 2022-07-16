@@ -1,0 +1,13 @@
+h2      {color: darkred;text-decoration: underline;}
+form    {background-color: rgb(145,145,243);padding: 10px 30px ; width: fit-content; border:1px solid white; }
+a       {color: darkred;}
+.button1 {color: white;
+        background-color: brown; 
+        width: 170px;
+        padding: 5px;
+        cursor: pointer;
+        font-size: 16px;opacity: 0.9;}
+.button1:hover {opacity: 1;}
+.regfooter {background-color:burlywood ;text-align: center;border: 1px solid white;
+        padding: 0.1px 44.5px;
+        width: fit-content;color: white;}

@@ -1,0 +1,15 @@
+{%extends "webPage.html" %}
+{% block content %}
+    <form action="/success" method="POST">
+        <h2>Login Form</h2>
+        <p><b>Username </b></p>
+        <p><input type="text" name="username" placeholder="Enter username"></p>
+        <p><b>Password </b></p>
+        <p><input type="password" name="password" placeholder="Enter password"></p>
+        <p><input class="button" type="submit" value="Login"><input class="button" type="reset" value="Clear"></p>
+        </form>
+    <div class="loginfooter">
+        <p>Forgot <a href="/reset"><b>Password?</b></a></p>
+    </div>
+{% endblock %}
+

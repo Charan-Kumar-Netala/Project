@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/webPage.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+    </head>
+    <body>
+    <div class="border">
+        <ul class="nav">
+            <li class="home"><a href="/">Home</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">ISSUES</a></li>
+            <li><a href="#">TEAM</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#C1">CONTACT</a></li>
+            <div class="right">
+            <li><a href="/login">Login</a></li>
+            <li class="round"><a href="/register">Sign Up</a></li></div>
+        </ul>
+        <div class="form">
+            {% block content %}
+            {% endblock %}</div>
+        <div class="head">
+            <h3>ONLINE <br> EDUCATION</h3>
+        </div>
+        <div class="goto">
+            <a class="go" href="/register">GET STARTED</a>
+            <a class="gt" href="#">TRY DEMO</a>
+        </div>
+    </div><br>
+    <div class="footer">
+        <h3 id="C1" class="foot">CONTACT</h3>
+        <div class="content">
+            <p class="email"><strong>Mail us at:</strong><a href="mailto:charankumarnetala@gmail.com"> charankumarnetala@gmail.com</a></p>
+            <p class="email"><strong>Contact:</strong> 3-125, Modukuru, Andhra Pradesh</p>
+            <p class="email"><strong>Phone Number:</strong> 8074715315</p></div>
+    </div>
+    
+    </body>
+</html>
