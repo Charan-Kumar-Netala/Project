@@ -84,58 +84,5 @@ def reset():
 def gotit():
     return render_template('ref.html')
      
-# @app.route('/create')
-# def create():
-#     new_user = {'Name' : 'xyz', 'Age' : 20}
-#     db_operations.insert_one(new_user)
-#     #print(user['Name'],'Created successfully')
-#     result = {'result' : 'Created successfully'}
-#     return result
-
-# @app.route('/create')
-# def create_many():
-#     new_user_1 = {'Name' : 'xyz1', 'Age' : 10}
-#     new_user_2 = {'Name' : 'xyz2', 'Age' : 20}
-#     new_user_3 = {'Name' : 'xyz3', 'Age' : 30}
-#     new_users = [new_user_1, new_user_2, new_user_3]
-#     db_operations.insert_many(new_users)
-#     result = {'result' : 'Created successfully'}
-#     return result
-
-# @app.route('/read')
-# def read():
-#     users = db_operations.find()
-#     output = [{'Name' : user['Name'], 'Age' : user['Age']} for user in users]
-#     #print(output)
-#     return jsonify(output)
-
-# @app.route('/')
-# def index():
-#     return '''
-#         <h1>Save file</h1>
-#         <form method="POST" action="/save-file" enctype="multipart/form-data">
-#             <label for="name">Name</label>
-#             <input type="text" name="name" id="name">
-#             <input type="file" name="new_file"><br><br>
-#             <input type="submit">
-#         </form>
-#     '''
-
-# @app.route('/save-file', methods=['POST'])
-# def save_file():
-#     if 'new_file' in request.files:
-#         new_file = request.files['new_file']
-#         mongo.save_file(new_file.filename, new_file)
-#         data = {'Name' : request.values.get('name'), 'File Name' : new_file.filename}
-#         db_operations.insert(data)
-#     return redirect('/')
-
-# @app.route('/retrieve-file/<name>')
-# def retrieve_file(name):
-#     filt = {'Name' : name}
-#     f = db_operations.find_one(filt)
-#     file_name = f['File Name']
-#     return mongo.send_file(file_name)
-
 if __name__ == '__main__':
     app.run(debug=True)
