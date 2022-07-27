@@ -1,4 +1,5 @@
 # SELF PROJECT
+# This has not been deployed in the Web.
 
 This is a self project made using Python and Flask framework.
 If you are a new user, you can register using registration form.
